@@ -1,7 +1,7 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/siernlib/main/library.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KaizerQuasar/Main-UI/main/MainSiern.Lua"))()
 
 local win = Library:Create({
-    Name = "Library Name"
+    Name = "Quasar"
 })
 local maintab = win:Tab('Main')
 local uitab = win:Tab('UI')
