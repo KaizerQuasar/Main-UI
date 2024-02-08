@@ -16,30 +16,30 @@ local Window2Section = charactertab:Section('Local Sec')
 local Window3Section = uitab:Section('UI Sec')
 
 -- Button Create Button
-ui:Button('Destroy GUI', function()
+Window3Section:Button('Button', function()
     print("You're handsome")
 end)
 
 -- Toggle
-main:Toggle('Aimbot', function(v) -- [Boolean Toggle Function (v)]
+Window1Section:Toggle('Toggle', function(v) -- [Boolean Toggle Function (v)]
     print(v)
 end)
 
 -- Textbox
-main:Textbox('FOV', function(v) -- [Input Function (v)]
+Window1Section:Textbox('Textbox', function(v) -- [Input Function (v)]
     print(v)
 end)
 
 -- Slider
-main:Slider('FOV', 0, function(v) -- [Min, 25 | Max, 0 | Default, 2.5 | Increment Function (v)]
+Window1Section:Slider('Slider', 0, function(v) -- [Min, 25 | Max, 0 | Default, 2.5 | Increment Function (v)]
     print(v)
 end)
 
 -- Label
-main:Label('This is a label')
+Window1Section:Label('This is a label')
 
 -- Dropdown
-local dropdown = main:Dropdown("Dropdown", {"opt1","opt2","opt3","opt4"},"", function(v) -- [Title, Options, ???, Function]
+local dropdown = Window1Section:Dropdown("Dropdown", {"opt1","opt2","opt3","opt4"},"", function(v) -- [Title, Options, ???, Function]
     print(v)
 end)
 
