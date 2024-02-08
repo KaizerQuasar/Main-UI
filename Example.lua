@@ -13,7 +13,7 @@ local WindowTab3 = win:Tab('UI')
 -- Sections
 local Window1Section = maintab:Section('Main Sec')
 local Window2Section = charactertab:Section('Local Sec')
-local Window3Sectio = uitab:Section('UI Sec')
+local Window3Section = uitab:Section('UI Sec')
 
 -- Button Create Button
 ui:Button('Destroy GUI', function()
